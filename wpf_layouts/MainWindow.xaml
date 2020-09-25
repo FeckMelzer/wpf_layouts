@@ -1,0 +1,25 @@
+﻿<Window x:Class="wpf_layouts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_layouts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="StackPanel" Content="StackPanel" VerticalAlignment="Center" Height="50" Grid.Row="0"></Button>
+        <Button x:Name="Dock" Content="Dock" VerticalAlignment="Center" Height="50" Grid.Row="1"></Button>
+        <Button x:Name="Splitted" Content="Splitted" VerticalAlignment="Center" Height="50" Grid.Row="2"></Button>
+        <Button x:Name="Grid" Content="Grid" VerticalAlignment="Center" Height="50" Grid.Row="3"></Button>
+    </Grid>
+</Window>
